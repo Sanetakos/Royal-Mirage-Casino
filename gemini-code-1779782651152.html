@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Mirage Casino - Die neue Ära</title>
+    <style>
+        :root {
+            --primary-gold: #D4AF37;
+            --bg-dark: #0B0C10;
+            --bg-panel: #1F2833;
+            --text-light: #C5C6C7;
+            --neon-accent: #66FCF1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(180deg, #000000 0%, var(--bg-dark) 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-gold);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+
+        .new-logo {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: 5px;
+            color: var(--text-light);
+            text-transform: uppercase;
+            margin: 0;
+            display: inline-block;
+            position: relative;
+        }
+
+        .new-logo span {
+            color: var(--primary-gold);
+        }
+
+        .logo-icon {
+            display: block;
+            margin: 0 auto 15px auto;
+            width: 80px;
+            height: 80px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 350px;
+            background-image: url('https://images.unsplash.com/photo-1596838132731-3301c3fd4317?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            border: 1px solid #333;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+
+        .article-box {
+            background-color: var(--bg-panel);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid var(--neon-accent);
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .article-date {
+            color: var(--neon-accent);
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        h1, h2 {
+            color: #fff;
+            margin-top: 0;
+        }
+
+        .chips-section {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(45deg, #111, #222);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid var(--primary-gold);
+            gap: 30px;
+        }
+
+        .chips-text {
+            flex: 1;
+        }
+
+        .chip-visual {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #1a1a1a 30%, var(--primary-gold) 35%, var(--primary-gold) 40%, #222 45%, #111 60%);
+            border: 8px dashed var(--neon-accent);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(102, 252, 241, 0.4), inset 0 0 15px rgba(0,0,0,0.8);
+            position: relative;
+            animation: spin 20s linear infinite;
+        }
+
+        .chip-inner {
+            background-color: var(--bg-dark);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: var(--neon-accent);
+            font-size: 1.2rem;
+            border: 2px solid var(--primary-gold);
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        .tradition-list {
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .tradition-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .tradition-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .tradition-list li::before {
+            content: "►";
+            color: var(--primary-gold);
+            position: absolute;
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="50,5 95,25 95,75 50,95 5,75 5,25" fill="none" stroke="#D4AF37" stroke-width="4"/>
+            <path d="M 30 70 L 50 30 L 70 70" fill="none" stroke="#66FCF1" stroke-width="4"/>
+            <circle cx="50" cy="60" r="8" fill="#D4AF37"/>
+        </svg>
+        <h1 class="new-logo">Royal <span>Mirage</span></h1>
+        <p>The Next Generation of Gaming</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="hero-image"></div>
+
+        <div class="article-box">
+            <span class="article-date">10.07.2026 | Pressemitteilung</span>
+            <h2>Generationswechsel: Das Royal Mirage erfindet sich neu</h2>
+            <p>Es ist offiziell: Nach Jahrzehnten der erfolgreichen Führung durch meinen Vater, übernehme ich mit dem heutigen Tag die Leitung des Hauses. Was früher als traditioneller Treffpunkt für klassische Spielkultur galt, transformieren wir nun in einen hochmodernen, digitalen Entertainment-Komplex.</p>
+            
+            <p>Die verstaubten Konzepte der Vergangenheit legen wir ab. Wir brechen mit dem alten Branding und setzen ab sofort auf Cyber-Security, Krypto-Einsätze und ein neon-geprägtes Premium-Design. Die Zeiten ändern sich, und das Royal Mirage geht den entscheidenden Schritt in die Zukunft.</p>
+
+            <div class="tradition-list">
+                <h3>Was ändert sich für unsere Gäste?</h3>
+                <ul>
+                    <li><strong>Öffnungszeiten:</strong> Während die alten Kartentische früher nur in den späten Abendstunden zugänglich waren, bieten unsere neuen digitalen Live-Dealer nun rund um die Uhr Action.</li>
+                    <li><strong>Das Spielangebot:</strong> Das gewohnte Sortiment an klassischen Geräten weicht modernsten VR-Terminals und exklusivem Hologramm-Roulette.</li>
+                    <li><strong>Exklusive Events:</strong> Traditionen, die funktionieren, ehren wir! Jeden Donnerstagabend bleibt unser Event für die ganz großen Einsätze bestehen – allerdings in unserer neuen VIP-Lounge mit deutlich erhöhtem Limit.</li>
+                </ul>
+            </div>
+            
+            <p><em>"Die Vision meines Vaters war das Fundament. Die Technologie von heute ist unsere Zukunft." - Der neue Geschäftsführer.</em></p>
+        </div>
+
+        <div class="chips-section">
+            <div class="chip-visual">
+                <div class="chip-inner">RM</div>
+            </div>
+            <div class="chips-text">
+                <h2>Wichtige Sicherheitsmeldung: Neue RFID-Chips!</h2>
+                <p>Passend zu unserem Neustart am heutigen <strong>10.07.2026</strong> werden alle alten Spielchips restlos entwertet. Wir führen ab sofort unsere neuen, fälschungssicheren Smart-Chips ein.</p>
+                <p>Achten Sie auf das neue Logo (das verschränkte Neon-R/M) und die markante gold-türkise Färbung. Diese Jetons sind mit einem unsichtbaren RFID-Tracker ausgestattet. Alle alten Bestände müssen bis spätestens Mitternacht an der Hauptkasse auf Level 2 umgetauscht werden!</p>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            © 2026 Royal Mirage Entertainment Group. Zutritt ab 18 Jahren. Glücksspiel kann süchtig machen.
+        </div>
+
+    </div>
+
+</body>
+</html>
